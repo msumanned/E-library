@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="E_librarymanagment.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+ <head runat="server">
+    <title>E-librarymanagment</title>
+
+     <!-- fontawsome -->
+     <link href="Fontawsome/css/all.css" rel="stylesheet" />
+     <script src="Fontawsome/js/all.js"></script>
+
+    <!-- css link -->
+    <link href="css/sitestyle.css" rel="stylesheet" />
+     <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+    <link href="Bootstrap/css/D_bootstrap.min.css" rel="stylesheet" />
+    
+
+   <!-- js link -->
+    <script src="Bootstrap/js/js_bootstrap.bundle.min.js"></script>
+    <script src="Bootstrap/js/js_bootstrap.min.js"></script>
+    <script src="Bootstrap/js/popper.min.js"></script>
+    <script src="datatables/js/js_jquery.dataTables.min.js"></script>
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+ </head>
+ <body>
+    <form id="form1" runat="server">
+     
+          
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+             <a class="navbar-brand" href="#"><img src="images/book.png" alt="loading...">E-Library </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="justify-content:space-between !important">
+                  
+                      <ul class="navbar-nav">
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="Home.aspx">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                     <li>
+                         <a class="nav-link" href="#">Contact</a>
+                     </li>
+                </ul>
+                 
+                  
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <asp:LinkButton class="nav-link active" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">View Books</asp:LinkButton>
+                        </li> 
+
+                        <li class="nav-item">
+                            <asp:LinkButton class="nav-link active" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Login</asp:LinkButton>
+                        </li> 
+                        <li class="nav-item">
+                            <asp:LinkButton class="nav-link active" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Sign Up</asp:LinkButton>
+                       </li> 
+                       <li class="nav-item">
+                           <asp:LinkButton class="nav-link active" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click" Visible="False">Log out</asp:LinkButton>
+                       </li> 
+                        <li class="nav-item">
+                           <asp:LinkButton class="nav-link active" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click" Visible="False">Hello User</asp:LinkButton>
+                        </li> 
+                        
+                   </ul>
+                   
+              </div>
+           </div>
+      </nav>
+     
+        
+   
+
+                    
+
+                  
+
+
+            <!-- content placeholder-->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- content placeholder-->
+
+           <!-- footer-->
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton class="footer-link" ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Admin Login</asp:LinkButton> &nbsp; &nbsp;
+                            <asp:LinkButton class="footer-link" ID="LinkButton7" runat="server" OnClick="LinkButton7_Click" Visible="False">Publisher Managment</asp:LinkButton> &nbsp; &nbsp;
+                            <asp:LinkButton class="footer-link" ID="LinkButton8" runat="server" OnClick="LinkButton8_Click" Visible="False">Author Management</asp:LinkButton> &nbsp; &nbsp;
+                            <asp:LinkButton class="footer-link" ID="LinkButton9" runat="server" OnClick="LinkButton9_Click" Visible="False">Book Issuning</asp:LinkButton> &nbsp; &nbsp;
+                            <asp:LinkButton class="footer-link" ID="LinkButton10" runat="server" OnClick="LinkButton10_Click" Visible="False">Book Inventory</asp:LinkButton> &nbsp; &nbsp;
+                            <asp:LinkButton class="footer-link" ID="LinkButton11" runat="server" OnClick="LinkButton11_Click" Visible="False">Member Managment</asp:LinkButton> &nbsp; &nbsp;
+
+                        </p>
+                        
+                        
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="footer2" class="container-fluid">
+              <p class="text-center copyright">
+                  &copy All copyrights 2023 Reserved E-Library
+              </p>
+            </div>
+        </footer>
+        
+        
+    </form>
+ </body>
+</html>

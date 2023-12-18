@@ -1,0 +1,134 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+
+}
+img{
+    max-width:100%;
+}
+a{
+    text-decoration:none;
+}
+
+.sec_features, .sec_bannar {
+    padding-top: 5%;
+}
+p {
+    padding: 10px 0px 10px 0px !important;
+    margin-bottom: 0 !important;
+}
+/*home section*/
+.home{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url(/images/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.home .home-content {
+        position: absolute;
+        background-color: #52525259;
+        width: 100%;
+        height: 500px;
+        display: flex !important;
+        align-items: end !important;
+        justify-content: center !important;
+}
+.home h1{
+    background-color:brown;
+    border-left:10px solid green;
+    font-size:65px;
+    color:white;
+    padding:10px;
+}
+/*features part*/
+.features{
+    text-align:center;
+}
+.features img {
+    border-radius: 50%;
+    border: 3px solid beige;
+    outline: 2px solid brown;
+}
+
+/* bannar2 */
+.bannar2{
+    position: relative;
+    width: 100%;
+    height:500px;
+    background-image: url(/images/banner3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.bannar2 h2{
+    background-color:brown;
+    color:white;
+    border-left:10px solid green;
+    font-size:50px;
+    padding:10px;
+}
+
+/*process */
+.process {
+    text-align: center;
+}
+
+.process img {
+        border-radius: 5%;
+        border: 3px solid beige;
+        outline: 2px solid green;
+}
+
+/*footer links*/
+.footer-link {
+    color: white;
+    text-decoration: none !important;
+}
+.footer-link:hover{
+    color: lightgrey;
+}
+footer{
+    bottom:0;
+}
+.copyright{
+    color:white;
+    font-size:20px;
+}
+#footer1{
+    background-color: brown;
+    align-items: center;
+}
+#footer2{
+    background-color: darkgreen;
+    align-items: center;
+}
+
+/*user login*/
+.btn-login{
+    background-color:green !important;
+    color:white !important;
+}
+.btn-signup {
+    background-color: brown !important;
+    color: white !important;
+}
+
+/*user signup*/
+.login-credential {
+    color: brown !important;
+    font-weight: 800 !important;
+    text-align: center !important;
+}
+
+/* publisher management*/
+.publisher {
+    border-radius: 5%;
+    border: 3px solid beige;
+    outline: 2px solid green;
+}
